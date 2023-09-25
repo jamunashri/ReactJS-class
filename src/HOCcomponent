@@ -1,0 +1,46 @@
+HOC - Higher Order Component
+
+
+It takes the one component as the Prop and return the one new 
+component
+
+const HOC = () => {
+  const { Home } = props
+  return (
+    <> <Header /> {Home} <Footer /> </>
+  )
+}
+
+Header 
+Footer
+
+<Header />
+
+<Home /> 
+
+<Footer />
+
+
+Optimistic => unwanted code, component calling
+
+
+
+Disadvantage of not using Optimistic code
+1) Performance
+2) Bundle Size
+
+
+
+
+React Project(200MB) => bundle (2-3 KB)
+
+
+Link
+
+<a href="/" /> => html
+
+1) react-router-dom installation package
+
+import { Link } from 'react-router-dom'
+
+2) <Link to="/" />

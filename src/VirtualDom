@@ -1,0 +1,26 @@
+Virtual DOM
+
+React JS
+
+
+DOM - Docment Object Modal
+1) browser run
+
+                Babel
+2) React Project => JS => DOM => output
+
+3) Update => DOM -changes the update value => UI
+
+
+Virtual DOM => It saves the origiinal DOM's copy
+
+if any changes happen => virtual DOM Update
+
+It commpares the Original DOM and update the DOM only nessasaryy part
+
+
+Innterview
+1) DOM, VIrtal DOM
+2) Function vs Class
+
+Props Drilling

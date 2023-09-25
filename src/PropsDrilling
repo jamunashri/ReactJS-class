@@ -1,0 +1,107 @@
+Props Drilling
+
+
+Props => pass the one component's state value to another component as a props
+
+Component A - Parent of Component B - App.js - LOGO (state) - <Home logo={LOGO} />
+
+Component B - Parent of Component C - Home.js - LOGO(props)
+
+Component C - child of Component B - Header.js - <img src={LOGO} /> - LOGO (props)
+
+
+Pass the props value into onee or more component is called Props Drilling
+
+Advantage :
+
+1) Easy use 
+2) Updatable value, once we can update
+
+
+
+Disadvantage : 
+
+1) Virtual DOM - performance not good
+
+
+
+Solution: Redux
+
+
+
+
+
+
+
+
+
+Component Life cycle - imp****
+
+React - Component base application
+
+4 stages of lifecycle
+
+
+1) Initialization phase
+2) Mounting phase
+3) Updating phase
+4) UnMountingg phase
+
+
+Initialization
+
+Class -> class Declaration, this.state, render, return
+
+Function -> function declaration, useState(initial value), return
+
+
+Mounting
+
+only once called
+
+Class -> 
+componentDidMount() {
+	
+}
+
+function -> 
+
+import {useEffect} from 'react'
+
+useEffect(() => {
+	
+},[])
+
+Updating phase
+
+state, props update 
+
+class -> 
+
+componentDidUpdate() {
+	
+}
+
+functional -> 
+
+useEffect(() => {
+	
+},[propsValue, stateValue])
+
+
+Unmounting phase
+
+class => 
+
+componentWillUnMount() {
+	
+}
+
+function => 
+
+useEffect(() => {
+	return (() => {
+	
+	})
+})
+

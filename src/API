@@ -1,0 +1,60 @@
+API - Application Programming Interface
+
+
+Frontend    <----------      Backend    <-  Database 
+              API                             
+                                          Process
+
+
+   GET - List of data - axios.get - no user input
+   POST - Create a User - axios.post - user input
+   PUT - Update a User - axios.put - user input, id=0, degree="ME"
+   DELETE - Delete a User - axios.delete - user input,id
+
+
+   [{
+     name: "Jamuna",
+     degree: "ME",
+     id: 0
+   },{
+     name: "Brindha",
+     degree: "BE",
+     id:1
+   },{
+     name: "Keerthana",
+     degree: "BE",
+     id: 2
+   },{
+     name: "Kavitha",
+     degree: "BE",
+     id:3
+   },{
+     name: "Selvam",
+     degree: "BE",
+     id:5
+   },{
+     name: "Shanmugasundaram",
+     degree:"BCA",
+     id:6
+   }]                                
+
+
+
+
+   API Endpoint
+
+   https://dummyjson.com/products - GET - List of Products
+
+   npm package - npm i axios
+
+   axios.get("https://dummyjson.com/products").then(res => {
+     console.log(res,"res")
+   }).catch(err => {
+     console.log(err,"err")
+   })
+
+
+   import axios from 'axios'
+
+
+   status - 200 - Succeess

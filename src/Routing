@@ -1,0 +1,27 @@
+Routing
+
+1) package - npm - react-router-dom
+
+npm install react-router-dom
+
+2) index.js
+
+import { BrowserRouter as Router } from "react-router-dom";
+
+<Router> <App /> </Router>
+
+3) App.js
+
+import { Routes, Route } fromm 'react-router-dom'
+
+<Routes>
+
+<Route exact path="/login" element={<Login />} />
+<Route exact path="/signup" element={<Register />} />
+<Route exact path="/home" element={<Home />} />
+</Routes>
+
+class based componetn Routing via buttono onclikc
+
+window.history.pushState({}, undefined, "/header");
+
